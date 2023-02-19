@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind Css  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Blog</title>
+
+</head>
+
+<body>
+
+    <!-- header Section Start  -->
+
+    <header class="py-5 md:py-10 px-2">
+        <div class="container mx-auto">
+            <div class="bg-sky-100 py-4 px-5 md:py-6 md:px-10 flex items-center justify-between rounded-md">
+                <div>
+                    <h2 class="text-2xl md:text-4xl  mb-1 font-bold text-slate-700">Interactive</h2>
+                    <h3 class="text-xl md:text-2xl font-medium text-gray-500">Blog Page</h3>
+                </div>
+                <div>
+                    <a href="index.html"
+                        class="py-2 px-6 md:py-3 md:px-10 text-base md:text-lg font-medium bg-sky-500 text-white rounded-md hover:bg-sky-600">Home</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- header Section End  -->
+
+    <!-- Main Section Start  -->
+
+    <main class="mx-2 mb-12">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <!-- Qus : 1  -->
+
+                    <div class="my-5 mx-3">
+                        <h2 class="text-slate-700 text-xl md:text-2xl font-semibold mb-4">What is DOM? What is the
+                            purpose
+                            of
+                            DOM?</h2>
+                        <div class="text-gray-700 text-base">
+                            <p>
+                                <strong>Answer : </strong> DOM means Document Object Model. By using DOM we can create
+                                dynamic
+                                and interactive elements inside our HTML document. With the object model, javascript get
+                                all
+                                the
+                                power it needs to create dynamic HTML.
+                            </p>
+
+                            <p>If we want to create any dynamic , interactive button event inside html, We can create it
+                                by
+                                DOM.
+                                We
+                                can use so many events like click, dblclick, mouseover, mouseout, mouseenter, keyup,
+                                keydown
+                                ect
+                                to make our website more dynamic or interactive by using DOM. Not only with button, we
+                                can
+                                make it with any type of HTML elements. </p>
+                            <p>We can dynamicaly style our website using DOM. We can make css style via DOM. We can get
+                                and
+                                set and also change
+                                any place value using DOM. Using DOM we can get all control of any HTML elemnts by it's
+                                id,
+                                classes, tag names. We can change any eleemts attribute, classes ctc and also can set
+                                their
+                                value. DOM is best if you want to make a Dynamic website.</p>
+                        </div>
+
+
+                    </div>
+
+
+                    <!-- Qus 2 :  -->
+
+                    <div class="my-5 mx-3">
+                        <h2 class="text-slate-700 text-xl md:text-2xl font-semibold mb-4">How can we select HTML
+                            elements using DOM?</h2>
+                        <div class="text-gray-700 text-base">
+                            <p>
+                                <strong>Answer : </strong> Using DOM We can select HTML element in 5 different steps.
+                                <br> <br>
+                            </p>
+                            <p>
+                                <strong>Step 1 : getElementById</strong> :
+                                Using 'getElementById' we can get HTML element id and can control it. <br> Example :
+                                document.getElementById('idName')
+                            </p>
+                            <p>
+                                <strong>Step 2 : getElementsByClassName</strong> :
+                                Using 'getElementsByClassName' we can get HTML elements classes and can control them.
+                                <br>
+                                Example : document.getElementsByClassName('className')
+                            </p>
+                            <p>
+                                <strong>Step 3 : getElementsByTagName</strong> :
+                                Using 'getElementsByTagName' we can get HTML elements tags and can control them. <br>
+                                Example : document.getElementsByTagName('tagName')
+                            </p>
+                            <p>
+                                <strong>Step 4 : querySelector</strong> :
+                                Using 'querySelector' we can get HTML element id, class, tag and can control it. <br>
+                                Example : for class : document.querySelector('.className') | for id :
+                                document.querySelector('#idName') | for tag : document.querySelector('tagName')
+                            </p>
+                            <p>
+                                <strong>Step 5 : querySelectorAll</strong> :
+                                Using 'querySelectorAll' we can get HTML elements ids, class, tags and can control them.
+                                <br>
+                                Example : for classes : document.querySelectorAll('.className') | for ids :
+                                document.querySelectorAll('#idName') | for tags : document.querySelectorAll('tagName')
+                            </p>
+
+
+                        </div>
+
+
+                    </div>
+
+                    <!-- Qus : 3  -->
+
+                    <div class="my-5 mx-3">
+                        <h2 class="text-slate-700 text-xl md:text-2xl font-semibold mb-4">What is Event Bubble? </h2>
+                        <div class="text-gray-700 text-base">
+                            <p>
+                                <strong>Answer : </strong>Event Bubble is a DOM Event. Event Bubble is like a bubble in
+                                the water. If you register any
+                                event in a HTML element, this event will go through up to its parent element. This event
+                                will
+                                work for child element to its parent element.
+                            </p> <br>
+                            <p>For Example : Suppose, inside ul tag you have some li elements. if you register any
+                                event in any li elements. This event will go up li to ul. It means this event also
+                                trigger
+                                for
+                                ul element.
+                            </p>
+
+                            <img src="./images/bubble.png" class="w-full m-6 p-6" alt="">
+
+
+                        </div>
+
+                    </div>
+                    <!-- Qus : 4  -->
+
+                    <div class="my-5 mx-3">
+                        <h2 class="text-slate-700 text-xl md:text-2xl font-semibold mb-4">What is Callback Function
+                            ? Why we use it ? </h2>
+                        <div class="text-gray-700 text-base">
+                            <p>
+                                <strong>Answer : </strong> If a function call another function than it's a callback
+                                function. That mean's according to me, When a function will be execute then it call
+                                another
+                                function and say my work is done, now you can be execute and then this another function
+                                will be execute.
+
+                            </p> <br>
+                            <p>
+                                Callback function is a function which contains a function as an argument.
+                            </p>
+                            <br>
+
+                            <p>For Example : <strong>
+                                    function mainFunc(name){ <br>
+                                    document.getElementById('idName').innerText = name; <br>
+                                    }
+                                    <br>
+                                    function anotherFunc(){ <br>
+                                    let name = "My Name"; <br>
+                                    return name; <br>
+                                    } <br>
+                                    let result = anotherFunc(); <br>
+                                    mainFunc(result) <br>
+
+                                </strong>
+                            </p>
+
+
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div>
+                    <img src="./images/dom.png" class="w-11/12 p-3" alt="">
+                </div>
+            </div>
+    </main>
+
+    <!-- Main Section End  -->
+
+</body>
+
+</html>
